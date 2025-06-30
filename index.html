@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Blog - Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Progress Bar -->
+  <div id="progress-bar"></div>
+
+  <!-- Header & Navbar -->
+  <header>
+    <h1>My Blog</h1>
+    <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+    <button id="toggle-dark"  aria-label="Toggle dark mode">🌙</button>
+    
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+        <li><a href="blog1.html">Post 1</a></li>
+        <li><a href="blog2.html">Post 2</a></li>
+        <li><a href="blog3.html">Post 3</a></li>
+      </ul>
+    </nav>
+    <div class="top-bar">
+      <input
+        type="text"
+        id="search"
+        placeholder="Search blog titles..."
+        aria-label="Search blog titles"
+      />
+    </div>
+  </header>
+
+   <!-- Recent Posts Carousel -->
+<section class="carousel-section">
+  <h2 style="text-align:center;">Recent Posts</h2>
+  <div class="carousel-container">
+    <div class="carousel-track">
+      <div class="carousel-item">
+        <img src="images/blog1.jpg" alt="Little Steps" />
+        <p><a href="blog1.html">The Little Steps That Changed Everything</a></p>
+      </div>
+      <div class="carousel-item">
+        <img src="images/blog2.jpg" alt="Save Forests" />
+        <p><a href="blog2.html">Nature's Cry for Help</a></p>
+      </div>
+      <div class="carousel-item">
+        <img src="images/blog3.jpg" alt="RCB Victory" />
+        <p><a href="blog3.html">RCB IPL 2025 Victory</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="filter-buttons" style="text-align:center; margin-top: 1rem;">
+  <button class="filter-btn" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="inspiration">Inspiration</button>
+  <button class="filter-btn" data-filter="nature">Nature</button>
+  <button class="filter-btn" data-filter="sports">Sports</button>
+</div>
+
+  <!-- Main Content -->
+  <main>
+    <section class="blog-preview-section" style="padding: 2rem;">
+      
+      <!-- Blog 1 -->
+      <div class="blog-card" data-tags="inspiration">
+        <img src="images/blog1.jpg" alt="Little Steps Image" />
+        <div class="card-content">
+          <h2><a href="blog1.html">The Little Steps That Changed Everything</a></h2>
+          <p class="date">Published on June 9, 2025</p>
+          <p class="reading-time" data-id="blog1">⏱ Reading Time: ~2 min</p>
+          <p>Aarav learned that big dreams come true through tiny, consistent steps...</p>
+          <button class="like-btn" data-id="blog1">❤ Like (<span class="like-count">0</span>)</button>
+          <button class="bookmark-btn" data-id="blog1">🔖 Bookmark</button>
+        </div>
+      </div>
+
+      <!-- Blog 2 -->
+      <div class="blog-card" data-tags="nature">
+        <img src="images/blog2.jpg" alt="Save Forests Image" />
+        <div class="card-content">
+          <h2><a href="blog2.html">Nature's Cry for Help: Saving Forests and Endangered Animals</a></h2>
+          <p class="date">Published on June 5, 2025</p>
+          <p class="reading-time" data-id="blog1">⏱ Reading Time: ~2 min</p>
+          <p>Forests are home to diverse wildlife. Learn how we can protect these precious ecosystems...</p>
+          <button class="like-btn" data-id="blog2">❤ Like (<span class="like-count">0</span>)</button>
+          <button class="bookmark-btn" data-id="blog2">🔖 Bookmark</button>
+        </div>
+      </div>
+
+      <!-- Blog 3 -->
+      <div class="blog-card" data-tags="sports">
+        <img src="images/blog3.jpg" alt="RCB IPL Victory" />
+        <div class="card-content">
+          <h2><a href="blog3.html">Royal Challengers Bangalore (RCB) IPL 2025 Victory</a></h2>
+          <p class="date">Published on June 3, 2025</p>
+          <p class="reading-time" data-id="blog1">⏱ Reading Time: ~2 min</p>
+          <p>RCB wins IPL 2025 after a stellar season — a celebration for fans worldwide!</p>
+          <button class="like-btn" data-id="blog3">❤ Like (<span class="like-count">0</span>)</button>
+          <button class="bookmark-btn" data-id="blog3">🔖 Bookmark</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Blog. All rights reserved.</p>
+    <div class="social-links">
+    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+</body>
+</html>

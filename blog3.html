@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog Post 3 - Royal Challengers Bangalore (RCB)</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Header & Navbar -->
+  <header>
+    <h1>My Blog</h1>
+    <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+    <button id="toggle-dark"  aria-label="Toggle dark mode">🌙</button>
+    
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog1.html">Post 1</a></li>
+        <li><a href="blog2.html">Post 2</a></li>
+        <li><a href="blog3.html" class="active" aria-current="page">Post 3</a></li>
+      </ul>
+    </nav>
+    <div class="top-bar">
+      <input
+        type="text"
+        id="search"
+        placeholder="Search blog titles..."
+        aria-label="Search blog titles"
+      />
+    </div>
+  </header>
+
+  <!-- Blog Content -->
+  <main class="blog-post">
+    <article>
+      <h2>Royal Challengers Bangalore (RCB)</h2>
+      <p class="date">Published on June 3, 2025</p>
+      <p class="reading-time">⏱ Approx. 2 min read</p>
+      <img src="images/blog3.jpg" alt="RCB team celebrating IPL 2025 victory" class="blog-image" />
+      <p>
+        After years of anticipation, the Royal Challengers Bangalore (RCB) have finally claimed
+        the IPL 2025 trophy, sending fans across the world into absolute jubilation! The
+        electrifying moment, captured here, shows the RCB squad in a euphoric celebration,
+        holding the coveted IPL trophy high with fireworks lighting up the night sky.
+      </p>
+      <p>A dominant performance throughout the season, stellar innings by the top-order, clinical bowling under pressure.</p>
+      <p>The squad celebrates their much-awaited triumph, embodying the spirit of <strong>🔥#PlayBold🔥</strong>.</p>
+      <p class="author-info">✍ Written by <strong>Rakshith N.</strong></p>
+    </article>
+  </main>
+
+  <!-- Comment Section -->
+  <section class="comments" style="padding: 2rem;">
+    <h2>Comments</h2>
+    <form id="comment-form">
+      <input type="text" id="comment-name" placeholder="Your Name" required />
+      <textarea id="comment-text" placeholder="Write a comment..." required></textarea>
+      <button type="submit">Post Comment</button>
+    </form>
+    <ul id="comment-list"></ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Blog. All rights reserved.</p>
+    <div class="social-links">
+    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+</body>
+</html>

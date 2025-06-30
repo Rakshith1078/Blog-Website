@@ -1,0 +1,336 @@
+/* ======= Base Styles ======= */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out, background-color 0.3s, color 0.3s;
+}
+
+/* ======= Header ======= */
+header h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ======= Navigation ======= */
+nav ul.nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+nav ul.nav-links.active {
+  display: flex;
+}
+
+/* ======= Top Bar ======= */
+.top-bar {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+#search {
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+#toggle-dark {
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background: #fff;
+  border: 2px solid #ccc;
+}
+
+/* ======= Blog Cards ======= */
+.blog-preview-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.blog-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1rem;
+  color:#161616;
+}
+
+.card-content h2 {
+  margin: 0.5rem 0;
+  font-size: 1.3rem;
+}
+
+.card-content .date {
+  color: #161616;
+  font-size: 0.9rem;
+}
+
+/* ======= Footer ======= */
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-content .socials a img {
+  width: 24px;
+  margin: 0 8px;
+  filter: invert(1);
+}
+
+/* ======= Responsive ======= */
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-content p {
+    margin-bottom: 1rem;
+  }
+
+  nav ul.nav-links {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .top-bar {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* ======= Dark Mode ======= */
+body.dark-mode {
+  background: #121212;
+  color: #e0dfdf;
+}
+
+body.dark-mode header,
+body.dark-mode nav,
+body.dark-mode footer {
+  background-color: #121212;
+}
+
+/* ======= Comment Section ======= */
+.comments h2 {
+  margin-bottom: 1rem;
+}
+
+#comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 600px;
+  margin-top: 1rem;
+}
+
+#comment-form input,
+#comment-form textarea {
+  padding: 0.5rem;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+#comment-form button {
+  background: #007BFF;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+#comment-form button:focus {
+  outline: 2px dashed #2196f3;
+  outline-offset: 3px;
+}
+
+#comment-list li {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background: #eee;
+  border-radius: 5px;
+}
+
+/* ======= Scroll to Top Button ======= */
+#scroll-top {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background: #007BFF;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none; /* initially hidden */
+  font-size: 1.2rem;
+  z-index: 1000;
+}
+
+/* ======= Page Fade ======= */
+body.fade-out {
+  opacity: 0;
+}
+
+/* ======= Progress Bar ======= */
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: #2196f3;
+  width: 0%;
+  z-index: 1000;
+  transition: width 0.2s ease;
+}
+
+/* ======= Like & Bookmark Buttons ======= */
+.like-btn,
+.bookmark-btn {
+  margin-top: 10px;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background-color: #f0f0f0;
+  transition: background 0.2s;
+}
+
+.like-btn:hover,
+.bookmark-btn:hover {
+  background-color: #ddd;
+}
+
+.like-btn.liked {
+  background-color: #ffccd5;
+}
+
+.bookmark-btn.saved {
+  background-color: #cce5ff;
+}
+
+/* ======= Carousel Section ======= */
+.carousel-section {
+  margin: 2rem auto;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  animation: scroll 20s linear infinite;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: 250px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.carousel-item a {
+  display: block;
+  padding: 0.5rem;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(+100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* ======= Filter Buttons ======= */
+.filter-buttons {
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.filter-btn {
+  margin: 0 8px;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #e0e0e0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: #2196f3;
+  color: white;
+}
+
+.filter-btn:focus {
+  outline: 2px dashed #2196f3;
+  outline-offset: 3px;
+}
