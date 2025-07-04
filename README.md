@@ -2,6 +2,9 @@
 
 Welcome to My Blog. a responsive, interactive, and user-friendly blog website built with HTML, CSS, and JavaScript. This project showcases clean UI design, accessibility features, and client-side interactivity using localStorage and DOM manipulation.
 
+# Live Demo
+https://rakshith1078.github.io/Blog-Website/
+
 # Features
 
 - Dark Mode Toggle
@@ -50,10 +53,6 @@ Welcome to My Blog. a responsive, interactive, and user-friendly blog website bu
 - ARIA attributes for navigation and buttons
 - Keyboard-friendly controls
 - Lightweight â€” no frameworks or build tools
-
-# Live Demo
-
-https://rakshith1078.github.io/Blog-Website/
 
 # License
 
